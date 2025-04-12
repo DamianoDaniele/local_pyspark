@@ -7,6 +7,8 @@ from pyspark.sql.types import StructType, StructField, StringType, IntegerType
 os.environ["PYSPARK_PYTHON"] = sys.executable
 os.environ["HADOOP_HOME"] = "C:\\Users\\Utente\\hadoop"
 os.environ["hadoop.home.dir"] = "C:\\Users\\Utente\\hadoop"
+print("Versione Python:", sys.version)
+
 
 spark = (SparkSession.builder
          .appName("test_local_oyspark")
